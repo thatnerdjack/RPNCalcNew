@@ -22,6 +22,6 @@ public class RPNSubtractOperator extends RPNOperator{
         a = ((RPNIntegerItem) aItem).myInt;
         b = ((RPNIntegerItem) bItem).myInt;
 
-        stack.push(a - b);
+        stack.push(b - a);
     }
 }

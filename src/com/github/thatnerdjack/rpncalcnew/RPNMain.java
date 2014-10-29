@@ -32,6 +32,7 @@ public class RPNMain {
 		RPNStack myStack = new RPNStack();
 	
 		myStack.registerOperator(new RPNAddOperator());
+        myStack.registerOperator(new RPNSubtractOperator());
 		
 		String [] tokens = getTokens(readLine(": "));
 		for (String t : tokens) {
